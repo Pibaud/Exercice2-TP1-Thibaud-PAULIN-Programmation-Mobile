@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exercice3XML</string>
+    <string name="name">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="age">Age</string>
+    <string name="area_of_expertise">Area of expertise</string>
+    <string name="phone_number">Phone number</string>
+    <string name="validate">Submit</string>
+    <string name="confirm_dialog_title">Do you really want to submit the form</string>
+    <string name="validate_dialog">Yes, submit</string>
+    <string name="dismiss_dialog">No</string>
+    <string name="validate_recap">OK</string>
+    <string name="back_recap">Back</string>
+    <string name="profil_welcome_message">"Hello, "</string>
+    <string name="profile_presentation">There are all the available informations about you. You are</string>
+    <string name="profile_age_expertise">" years old. Your area of expertise is "</string>
+    <string name="profile_contact">Call</string>
+    <string name="profile_invalid_infos">Is there any invalid information ?</string>
+    <string name="profile_edit_infos_btn">Edit informations</string>
+</resources>

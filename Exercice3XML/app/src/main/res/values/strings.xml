@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Exercice3XML</string>
+    <string name="name">Nom</string>
+    <string name="firstname">Prénom</string>
+    <string name="age">Âge</string>
+    <string name="area_of_expertise">Domaine de compétences</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="validate">Soumettre</string>
+    <string name="confirm_dialog_title">Êtes-vous sûr de vouloir envoyer le formulaire ?</string>
+    <string name="validate_dialog">Oui, envoyer</string>
+    <string name="dismiss_dialog">Non</string>
+    <string name="validate_recap">OK</string>
+    <string name="back_recap">Retour</string>
+    <string name="profil_welcome_message">"Bonjour, "</string>
+    <string name="profile_presentation">"Voici les informations disponibles vous concernant. Vous êtes âgé de "</string>
+    <string name="profile_age_expertise">" ans. Votre domaine d'expertise est : "</string>
+    <string name="profile_contact">"Appeler "</string>
+    <string name="profile_invalid_infos">Une ou plusieurs informations sont invalides ?</string>
+    <string name="profile_edit_infos_btn">Modifier les informations</string>
+    <string name="main_welcome_message">Vos informations personnelles</string>
+    <string name="recap_welcome_message">Résumé de vos informations</string>
+</resources>
