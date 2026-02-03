@@ -11,28 +11,41 @@
         android:orientation="horizontal"
         >
         <TextView
+            style="@style/Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/profil_welcome_message"
             />
         <TextView
+            style="@style/Title"
             android:id="@+id/profile_firstname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
         <TextView
+            style="@style/Title"
             android:id="@+id/profile_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        >
 
         <TextView
+            style="@style/Text"
             android:id="@+id/profile_presentation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,12 +53,14 @@
             />
 
         <TextView
+            style="@style/Text"
             android:id="@+id/profile_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
 
         <TextView
+            style="@style/Text"
             android:id="@+id/profile_age_expertise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,12 +68,18 @@
             />
 
         <TextView
+            style="@style/Text"
             android:id="@+id/profile_expertise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
 
+    </com.google.android.flexbox.FlexboxLayout>
+
         <TextView
+            style="@style/Title"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
             android:id="@+id/profile_contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,12 +87,15 @@
             />
 
         <TextView
+            android:layout_gravity="center"
+            style="@style/Text"
             android:id="@+id/profile_phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
 
         <ImageButton
+            android:layout_gravity="center"
             android:id="@+id/call_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,6 +103,9 @@
             android:background="@drawable/bg_call_button"
             />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
 
         <TextView
             android:id="@+id/profile_invalid_infos"
@@ -88,12 +115,13 @@
             />
 
         <Button
+            style="@style/Text"
             android:id="@+id/profile_edit_infos_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/profile_edit_infos_btn"
             />
 
-    </LinearLayout>
+
 
 </LinearLayout>

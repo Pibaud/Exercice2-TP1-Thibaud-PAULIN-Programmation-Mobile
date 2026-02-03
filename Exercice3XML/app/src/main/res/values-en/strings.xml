@@ -18,4 +18,9 @@
     <string name="profile_contact">Call</string>
     <string name="profile_invalid_infos">Is there any invalid information ?</string>
     <string name="profile_edit_infos_btn">Edit informations</string>
+    <string name="main_welcome_message">Your personal data</string>
+    <string name="recap_welcome_message">Summary of your personal data</string>
+    <string name="name_ph">Doe</string>
+    <string name="firstname_ph">John</string>
+    <string name="missing_fields">At least one field is empty. Please fill them all</string>
 </resources>

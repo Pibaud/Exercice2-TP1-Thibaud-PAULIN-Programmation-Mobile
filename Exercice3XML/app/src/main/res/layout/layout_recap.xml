@@ -10,69 +10,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/recap_welcome_message"
-        android:layout_row="0"
-        android:layout_column="0"
         />
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:columnCount="2"
-        android:rowCount="6"
-        android:gravity="center">
+        android:orientation="vertical">
 
         <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
-            android:layout_row="0"
-            android:layout_column="0"
             />
 
         <TextView
-            style="@style/Text"
+            style="@style/RoundedTextView"
             android:id="@+id/recap_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
             />
 
         <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
             android:text="@string/firstname" />
 
         <TextView
-            style="@style/Text"
+            style="@style/RoundedTextView"
             android:id="@+id/recap_firstname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="1"
             />
 
         <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="0"
             android:text="@string/age"
             />
 
         <TextView
-            style="@style/Text"
+            style="@style/RoundedTextView"
             android:id="@+id/recap_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="1"
             />
 
         <TextView
@@ -80,17 +63,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/area_of_expertise"
-            android:layout_row="3"
-            android:layout_column="0"
             />
 
         <TextView
-            style="@style/Text"
+            style="@style/RoundedTextView"
             android:id="@+id/recap_area_of_expertise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="3"
-            android:layout_column="1"
             />
 
         <TextView
@@ -98,38 +77,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone_number"
-            android:layout_row="4"
-            android:layout_column="0"
             />
 
         <TextView
-            style="@style/Text"
+            style="@style/RoundedTextView"
             android:id="@+id/recap_phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="4"
-            android:layout_column="1"
             />
 
-        <Button
-            style="@style/Text"
-            android:id="@+id/ok_btn"
-            android:layout_width="wrap_content"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/validate_recap"
-            android:layout_row="5"
-            android:layout_column="0"
-            />
+            android:orientation="horizontal">
+            <Button
+                style="@style/Text"
+                android:id="@+id/recap_back_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/back_recap"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                />
 
-        <Button
-            style="@style/Text"
-            android:id="@+id/recap_back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back_recap"
-            android:layout_row="5"
-            android:layout_column="1"
-            />
+            <Button
+                style="@style/Text"
+                android:id="@+id/ok_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/validate_recap"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                />
 
-    </GridLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
 </LinearLayout>

@@ -19,4 +19,8 @@
     <string name="profile_edit_infos_btn">Modifier les informations</string>
     <string name="main_welcome_message">Vos informations personnelles</string>
     <string name="recap_welcome_message">Résumé de vos informations</string>
+    <string name="name_ph">Dupont</string>
+    <string name="firstname_ph">Jean</string>
+    <string name="age_ph" translatable="false">30</string>
+    <string name="missing_fields">Un ou plusieurs champs sont vides. Veuillez les remplir</string>
 </resources>

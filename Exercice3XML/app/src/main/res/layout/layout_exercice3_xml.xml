@@ -12,31 +12,17 @@
         android:text="@string/main_welcome_message"
         />
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:columnCount="2"
-        android:rowCount="6"
-        android:gravity="center">
-
-        <TextView
+    <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
-            android:layout_row="0"
-            android:layout_column="0"
             />
 
-        <EditText
-            style="@style/Text"
+    <EditText
+        style="@style/RoundedEditText"
+        android:hint="@string/name_ph"
             android:id="@+id/edit_text_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
             android:autofillHints="name"
             android:inputType="text" />
 
@@ -44,38 +30,28 @@
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
             android:text="@string/firstname" />
 
         <EditText
-            style="@style/Text"
+            style="@style/RoundedEditText"
+            android:hint="@string/firstname_ph"
             android:id="@+id/edit_text_firstname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:inputType="text"
             android:autofillHints="name"
-            android:layout_row="1"
-            android:layout_column="1"
             />
 
         <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="0"
             android:text="@string/age"
             />
 
         <EditText
-            style="@style/Text"
+            style="@style/RoundedEditText"
+            android:hint="@string/age_ph"
             android:id="@+id/edit_text_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:inputType="number"
-            android:layout_row="2"
-            android:layout_column="1"
             />
 
         <TextView
@@ -83,39 +59,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/area_of_expertise"
-            android:layout_row="3"
-            android:layout_column="0"
             />
 
-        <EditText
-            style="@style/Text"
-            android:id="@+id/edit_text_area_of_expertise"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:layout_row="3"
-            android:layout_column="1"
-            />
+    <Spinner
+        android:id="@+id/spinner_expertise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext_rounded"
+        android:layout_margin="8dp"
+        android:elevation="4dp" />
 
         <TextView
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone_number"
-            android:layout_row="4"
-            android:layout_column="0"
             />
 
-        <EditText
-            style="@style/Text"
-            android:id="@+id/edit_text_phone_number"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/country_phone_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_rounded"
+            android:layout_margin="8dp"
+            android:elevation="4dp" />
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/edit_text_phone_number"
             android:inputType="phone"
             android:autofillHints="phone"
-            android:layout_row="4"
-            android:layout_column="1"
             />
+
+    </LinearLayout>
 
         <Button
             style="@style/Text"
@@ -123,11 +102,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/validate"
-            android:layout_row="5"
-            android:layout_column="0"
             />
 
-    </GridLayout>
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missing_fields"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
 
