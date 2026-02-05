@@ -1,0 +1,12 @@
+package com.example.trainapp.data.api
+
+import retrofit2.Response
+import retrofit2.http.GET
+import retrofit2.http.Query
+
+interface SncfApiService {
+    @GET("https://api.sncf.com/v1/coverage/sncf/places")
+    suspend fun searchPlaces(
+        @Query("q") query: String
+    ): Response<PlaceResponse>
+}

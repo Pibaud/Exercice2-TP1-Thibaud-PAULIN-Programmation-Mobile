@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">TrainApp</string>
     <string name="search_welcome_message">Quelle sera votre prochaine destination ?</string>
+    <string name="search_from_label">Départ</string>
+    <string name="search_to_label">Arrivée</string>
 </resources>
